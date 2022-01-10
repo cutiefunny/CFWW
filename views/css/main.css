@@ -56,7 +56,7 @@ th{
 
   .hide{
     display:none;
-    opacity: 0;
+    opacity: 30%;
   }
 
   .appear {
@@ -78,9 +78,9 @@ th{
 
   .calendar__day {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     width: calc(97% / 7);
-    height: calc(98% / 5);
+    height: calc(98% / 6);
     box-sizing: border-box;
     border-radius: 5px;
     padding: 20px;

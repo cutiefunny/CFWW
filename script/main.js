@@ -43,15 +43,15 @@ function test() {
          if (j == 0) {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#FFB3BB;' class='calendar__day horizontalGutter'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
+             `<div style='background-color:#B9E1FF;' class='calendar__day horizontalGutter hide'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
          } else if (j == 6) {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#FFB3BB;' class='calendar__day'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
+             `<div style='background-color:#B9E1FF;' class='calendar__day hide'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
          } else {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#FFB3BB;' class='calendar__day horizontalGutter'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
+             `<div style='background-color:#B9E1FF;' class='calendar__day horizontalGutter hide'><span>${(prevLastDay - (firstDayName - 1) + j)}</span><span></span></div>`;
          }
        }
        else if (i == 0 && j == firstDayName) {
@@ -73,15 +73,15 @@ function test() {
          if (j == 0) {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#FFFFBB' class='calendar__day horizontalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+             `<div style='background-color:#FFFFBB' class='calendar__day horizontalGutter hide'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
          } else if (j == 6) {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#FFFFBB' class='calendar__day'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+             `<div style='background-color:#FFFFBB' class='calendar__day hide'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
          } else {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#FFFFBB' class='calendar__day horizontalGutter'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
+             `<div style='background-color:#FFFFBB' class='calendar__day horizontalGutter hide'><span>${startDayCount}</span><span id='${year}${month}${setFixDayCount(startDayCount++)}'></span></div>`;
          }
        }
        else if (i > 0 && startDayCount <= lastDay) {
@@ -103,15 +103,15 @@ function test() {
          if (j == 0) {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#B9E1FF;' class='calendar__day horizontalGutter verticalGutter'><span>${lastDayCount++}</span><span></span></div>`;
+             `<div style='background-color:#B9E1FF;' class='calendar__day horizontalGutter verticalGutter hide'><span>${lastDayCount++}</span><span></span></div>`;
          } else if (j == 6) {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#B9E1FF;' class='calendar__day verticalGutter'><span>${lastDayCount++}</span><span></span></div>`;
+             `<div style='background-color:#B9E1FF;' class='calendar__day verticalGutter hide'><span>${lastDayCount++}</span><span></span></div>`;
          } else {
            // 스타일링을 위한 클래스 추가
            calHtml +=
-             `<div style='background-color:#B9E1FF;' class='calendar__day horizontalGutter verticalGutter'><span>${lastDayCount++}</span><span></span></div>`;
+             `<div style='background-color:#B9E1FF;' class='calendar__day horizontalGutter verticalGutter hide'><span>${lastDayCount++}</span><span></span></div>`;
          }
        }
      }
